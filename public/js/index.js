@@ -2,13 +2,14 @@ const dataList = document.getElementById('dataList');
 const dataTable = document.getElementsByClassName('dataTable');
 const tBody = document.getElementsByClassName('user')
 
-
+ 
 // READ - GET Method
 const READ = () => {
     fetch('http://localhost:4000/user')
     .then(response => response.json())
     .then(data => {
         
+        // console.log(data.data);
         for (let i = 0; i < data.data.length; i++) {
             const dataUser = document.getElementsByClassName('dataUser');
             dataUser[i].innerHTML = `

@@ -24,6 +24,18 @@ app.use('/user', usersRoutes)
 app.use('/index', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 });
+// Route Login
+app.use('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/login.html'))
+});
+// Route Admin
+app.use('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/admin-dashboard.html'))
+});
+// Route User
+app.use('/home', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/home.html'))
+});
 
 // Route link google
 app.use('/google', (req, res) => {
