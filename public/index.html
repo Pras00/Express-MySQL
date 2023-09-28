@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Data dari API</title>
+</head>
+<body>
+    <h1>Data dari API</h1>
+
+    <!-- popup -->
+    <!-- Button tambah user -->
+    <div id="showPopup">
+        <button>Tambah User</button>
+    </div>
+
+    <div class="popup" id="myPopup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Tambah Data Baru</h2>
+            <input type="text" id="username" placeholder="username"><br>
+            <input type="text" id="password" placeholder="password"><br>
+            <input type="text" id="role" placeholder="role"><br>
+            <button id="simpanData">Simpan</button>
+        </div>
+    </div>
+
+
+    <!-- Data user -->
+    <table class="dataTable">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+            <tr class="dataUser"></tr>
+        </tbody>
+    </table>
+    <!-- <ul id="dataList"></ul> -->
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
