@@ -7,7 +7,24 @@
     <title>Login Page</title>
 </head>
 <body>
-    <h1>Login</h1>
+    <video id="video-bg" autoplay loop muted>
+        <source src="./img/background_login.mp4" type="video/mp4">
+    </video>
+
+     <div class="header">
+        <h1>Selamat datang Website EduNine</h1>
+    </div>
+
+    <div class="loginContainer">
+        <h1>Login</h1>
+        <div class="loginForm">
+            <label for="Username" class="usernameLabel">Username</label>
+            <input type="text" placeholder="masukkan username" id="usernameInput">
+            <label for="Password" class="passwordLabel">Password</label>
+            <input type="text" placeholder="masukkan password" id="passwordInput">
+        </div>
+        <button id="login">Login</button>
+    </div>
 
 
     <script src="./js/login.js"></script>
